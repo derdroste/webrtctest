@@ -53,48 +53,48 @@ tape('connectionsApi(app, connectionManager)', t => {
     connectionsApi(app, connectionManager);
 
     const server = app.listen(8080, async () => {
-      const connections1 = await get('http://localhost:3000/v1/connections');
+      const connections1 = await get('http://localhost:8080/v1/connections');
 
       t.deepEqual(connections1, [], 'GET /v1/connections initially returns the empty array');
 
-      const connection1 = await post('http://localhost:3000/v1/connections');
+      const connection1 = await post('http://localhost:8080/v1/connections');
 
       TestRtcPeerConnection.peerConnections.shift();
 
       t.ok(connection1.localDescription, 'POST /v1/connections returns a new connection with a local description');
 
-      const connection2 = await get(`http://localhost:3000/v1/connections/${connection1.id}`);
+      const connection2 = await get(`http://localhost:8080/v1/connections/${connection1.id}`);
 
       t.deepEqual(connection1, connection2, 'GET /v1/connection/$id returns the connection');
 
-      const connections2 = await get('http://localhost:3000/v1/connections');
+      const connections2 = await get('http://localhost:8080/v1/connections');
 
       t.deepEqual(connections2, connectionManager.toJSON(), 'GET /v1/connections later returns the updated array');
 
-      const localDescription = await get(`http://localhost:3000/v1/connections/${connection2.id}/local-description`);
+      const localDescription = await get(`http://localhost:8080/v1/connections/${connection2.id}/local-description`);
 
       t.deepEqual(localDescription, connection2.localDescription, 'GET /v1/connections/$id/local-description returns the .localDescription');
 
-      const remoteDescription1 = await get(`http://localhost:3000/v1/connections/${connection2.id}/remote-description`);
+      const remoteDescription1 = await get(`http://localhost:8080/v1/connections/${connection2.id}/remote-description`);
 
       t.deepEqual(remoteDescription1, {}, 'GET /v1/connections/$id/remote-description returns the .remoteDescription');
 
-      const remoteDescription2 = await post(`http://localhost:3000/v1/connections/${connection2.id}/remote-description`, {
+      const remoteDescription2 = await post(`http://localhost:8080/v1/connections/${connection2.id}/remote-description`, {
         type: 'answer',
         sdp: 'answer'
       });
 
       t.deepEqual(remoteDescription2, { type: 'answer', sdp: 'answer' }, 'POST /v1/connections/$id/remote-description allows updating the .remoteDescription');
 
-      const remoteDescription3 = await get(`http://localhost:3000/v1/connections/${connection2.id}/remote-description`);
+      const remoteDescription3 = await get(`http://localhost:8080/v1/connections/${connection2.id}/remote-description`);
 
       t.deepEqual(remoteDescription3, remoteDescription2, 'GET /v1/connections/$id/remote-description returns the updated .remoteDescription');
 
-      const connection3 = await delete_(`http://localhost:3000/v1/connections/${connection1.id}`);
+      const connection3 = await delete_(`http://localhost:8080/v1/connections/${connection1.id}`);
 
       t.equal(connection3.state, 'closed', 'DELETE /v1/connection/$id returns the closed WebRtcConnection');
 
-      const connections3 = await get('http://localhost:3000/v1/connections');
+      const connections3 = await get('http://localhost:8080/v1/connections');
 
       t.deepEqual(connections3, [], 'GET /v1/connections finally returns the empty array again');
 
