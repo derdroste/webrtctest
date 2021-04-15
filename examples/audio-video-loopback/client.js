@@ -46,6 +46,6 @@ createExample('audio-video-loopback', description, { beforeAnswer });
 
 const videos = document.createElement('div');
 videos.className = 'grid';
-videos.appendChild(localVideo);
+videos.appendChild(remoteVideo);
 videos.appendChild(remoteVideo);
 document.body.appendChild(videos);
