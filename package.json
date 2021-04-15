@@ -1,20 +1,13 @@
 {
-  "name": "drostichat",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "node app.js"
-  },
-  "keywords": [],
   "author": "",
-  "license": "ISC",
+  "name": "serverstats",
+  "version": "0.0.0",
+  "repository": "websockets/ws",
+  "scripts": {
+    "start": "node index.js"
+  },
   "dependencies": {
-    "ejs": "^3.1.6",
-    "express": "^4.17.1",
-    "nodemon": "^2.0.7",
-    "peer": "^0.6.1",
-    "socket.io": "^4.0.1",
-    "uuid": "^8.3.2"
+    "express": "^4.16.4",
+    "ws": "^7.3.1"
   }
 }
