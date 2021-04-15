@@ -24,9 +24,9 @@ tape('ConnectionsClient', t => {
 
     connectionsApi(app, connectionManager);
 
-    const server = app.listen(3000, async () => {
+    const server = app.listen(8080, async () => {
       const connectionClient = new ConnectionClient({
-        host: 'http://localhost:3000',
+        host: 'http://localhost:8080',
         prefix: '/v1'
       });
 

@@ -52,7 +52,7 @@ tape('connectionsApi(app, connectionManager)', t => {
 
     connectionsApi(app, connectionManager);
 
-    const server = app.listen(3000, async () => {
+    const server = app.listen(8080, async () => {
       const connections1 = await get('http://localhost:3000/v1/connections');
 
       t.deepEqual(connections1, [], 'GET /v1/connections initially returns the empty array');
