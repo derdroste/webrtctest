@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="efac5995-e4c1-49da-964f-9f7275e00a12" name="Default Changelist" comment="fleter" />
+    <list default="true" id="34e20b0b-5592-4418-be60-57c59b3d06e7" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,157 +10,45 @@
   <component name="ComposerSettings">
     <execution />
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="MacroExpansionManager">
-    <option name="directoryName" value="ohaxy6nk" />
+    <option name="directoryName" value="etupmumn" />
   </component>
-  <component name="ProjectId" id="1rCqJLMHIKWfhNYAUHg4mBf5lDZ" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="1rFDo7oyd8FuQrAcOitssYhAGFY" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="javascript.nodejs.core.library.configured.version" value="14.15.4" />
+    <property name="javascript.nodejs.core.library.typings.version" value="14.14.41" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/server" />
-    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="efac5995-e4c1-49da-964f-9f7275e00a12" name="Default Changelist" comment="" />
-      <created>1618490346972</created>
+      <changelist id="34e20b0b-5592-4418-be60-57c59b3d06e7" name="Default Changelist" comment="" />
+      <created>1618563116193</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1618490346972</updated>
-      <workItem from="1618490349053" duration="2210000" />
-      <workItem from="1618494048607" duration="1307000" />
-      <workItem from="1618495639787" duration="7345000" />
+      <updated>1618563116193</updated>
+      <workItem from="1618563117450" duration="2336000" />
     </task>
-    <task id="LOCAL-00001" summary="fleter">
-      <created>1618494091916</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1618494091916</updated>
-    </task>
-    <task id="LOCAL-00002" summary="fleter">
-      <created>1618494133484</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1618494133484</updated>
-    </task>
-    <task id="LOCAL-00003" summary="fleter">
-      <created>1618495092417</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1618495092418</updated>
-    </task>
-    <task id="LOCAL-00004" summary="fleter">
-      <created>1618495649790</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1618495649790</updated>
-    </task>
-    <task id="LOCAL-00005" summary="fleter">
-      <created>1618496182739</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1618496182739</updated>
-    </task>
-    <task id="LOCAL-00006" summary="fleter">
-      <created>1618498844801</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1618498844801</updated>
-    </task>
-    <task id="LOCAL-00007" summary="fleter">
-      <created>1618499636581</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1618499636581</updated>
-    </task>
-    <task id="LOCAL-00008" summary="fleter">
-      <created>1618499964935</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1618499964935</updated>
-    </task>
-    <task id="LOCAL-00009" summary="fleter">
-      <created>1618500322356</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1618500322356</updated>
-    </task>
-    <task id="LOCAL-00010" summary="fleter">
-      <created>1618500538280</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1618500538280</updated>
-    </task>
-    <task id="LOCAL-00011" summary="fleter">
-      <created>1618527485507</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1618527485507</updated>
-    </task>
-    <task id="LOCAL-00012" summary="fleter">
-      <created>1618528159363</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1618528159363</updated>
-    </task>
-    <task id="LOCAL-00013" summary="fleter">
-      <created>1618528443545</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1618528443545</updated>
-    </task>
-    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="fleter" />
-    <option name="LAST_COMMIT_MESSAGE" value="fleter" />
   </component>
 </project>
