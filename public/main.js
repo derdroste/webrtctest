@@ -1,13 +1,11 @@
 const videoGrid = document.querySelector('#video-grid');
 const myVideo = document.createElement('video');
 myVideo.muted = true;
-const myPeer = new Peer(undefined, {
-    host: '/',
-    port: '3001'
-});
+const myPeer = new Peer();
+console.log(myPeer)
 const peers = {};
 
-const ws = new WebSocket(`wss://${location.host}`);
+const ws = new WebSocket(`ws://${location.host}`);
 
 myPeer.on('open', id => {
     ws.send(JSON.stringify({message: 'join-room', roomId: ROOM_ID, userId: id}));
