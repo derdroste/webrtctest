@@ -5,9 +5,12 @@ const WebSocket = require('ws');
 const server = createServer(app);
 const wss = new WebSocket.Server({ server });
 const {WebSocketServer} = require('./wss/wss');
+const rooms = require('./routes/rooms');
 const port = 8080;
 
+app.set('view engine', 'ejs');
 app.use(express.static('public'));
+app.use('/', rooms);
 
 WebSocketServer({wss, WebSocket});
 
