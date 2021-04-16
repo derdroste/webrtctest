@@ -18,7 +18,7 @@
 
 	const myPeer = new Peer();
 	const peers = {};
-	const ws = new WebSocket(`ws://${location.host}`);
+	const ws = new WebSocket(`wss://${location.host}`);
 
 	myPeer.on('open', id => {
 		ws.send(JSON.stringify({
