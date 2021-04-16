@@ -5,7 +5,7 @@ const myPeer = new Peer();
 console.log(myPeer)
 const peers = {};
 
-const ws = new WebSocket(`ws://${location.host}`);
+const ws = new WebSocket(`wss://${location.host}`);
 
 myPeer.on('open', id => {
     ws.send(JSON.stringify({message: 'join-room', roomId: ROOM_ID, userId: id}));
