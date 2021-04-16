@@ -1,8 +1,10 @@
 const videoGrid = document.querySelector('#video-grid');
 const myVideo = document.createElement('video');
 myVideo.muted = true;
-const myPeer = new Peer();
-console.log(myPeer)
+const myPeer = new Peer(undefined, {
+    host: '/',
+    port: '3001'
+});
 const peers = {};
 
 const ws = new WebSocket(`wss://${location.host}`);
@@ -29,7 +31,6 @@ navigator.mediaDevices.getUserMedia({
 
     ws.onmessage = (message) => {
         const data = JSON.parse(message.data);
-        console.log(data)
         switch (data.message) {
             case 'user-connected':
                 connectToNewUser(data.userId, stream);
