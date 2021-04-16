@@ -747,7 +747,7 @@ var app = (function () {
     			t2 = space();
     			create_component(bottombar.$$.fragment);
     			attr_dev(main, "class", "bg-primary h-full w-full");
-    			add_location(main, file, 83, 0, 1976);
+    			add_location(main, file, 83, 0, 1977);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -815,7 +815,7 @@ var app = (function () {
 
     	const myPeer = new Peer();
     	const peers = {};
-    	const ws = new WebSocket(`ws://${location.host}`);
+    	const ws = new WebSocket(`wss://${location.host}`);
 
     	myPeer.on("open", id => {
     		ws.send(JSON.stringify({
