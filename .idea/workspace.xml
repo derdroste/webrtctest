@@ -2,8 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34e20b0b-5592-4418-be60-57c59b3d06e7" name="Default Changelist" comment="fdbdgb">
+      <change afterPath="$PROJECT_DIR$/frontend/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/postcss.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/rollup.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/scripts/setupTypeScript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/App.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/BottomBar.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/MyVideo.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/TopBar.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/VideoGrid.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/store/stores.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/tailwind.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/bundle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/global.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/lp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/landingPage.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/rooms.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/rooms.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/room.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/room.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,7 +42,12 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="topBar" />
+        <option value="myVideo" />
         <option value="JavaScript File" />
+        <option value="PeerVideo" />
+        <option value="VideoGrid" />
+        <option value="BottomBar" />
       </list>
     </option>
   </component>
@@ -40,8 +70,17 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="14.15.4" />
     <property name="javascript.nodejs.core.library.typings.version" value="14.14.41" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -51,7 +90,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1618563116193</updated>
-      <workItem from="1618563117450" duration="17823000" />
+      <workItem from="1618563117450" duration="21016000" />
+      <workItem from="1618587185438" duration="9265000" />
     </task>
     <task id="LOCAL-00001" summary="fdbdgb">
       <created>1618565618772</created>
@@ -116,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618581888708</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="fdbdgb">
+      <created>1618581919636</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1618581919636</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,6 +179,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fdbdgb" />
