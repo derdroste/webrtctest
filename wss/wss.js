@@ -6,14 +6,44 @@ const WebSocketServer = ({wss, WebSocket}) => {
         ws.on('message', message => {
             const data = JSON.parse(message);
             ws.id = data.roomId;
+            ws.isAlive = true;
+
+            ws.on('pong', () => {
+                ws.isAlive = true;
+            });
 
             switch (data.message) {
                 case 'join-room':
-                    broadcastToRooms({wss, ws, WebSocket, message: 'user-connected', userId: data.userId});
+                    broadcastToRooms({
+                        wss,
+                        ws,
+                        WebSocket,
+                        message: 'user-connected',
+                        userId: data.userId
+                    });
                     break;
             }
+            ws.on('close', () => {
+                broadcastToRooms({
+                    wss,
+                    ws,
+                    WebSocket,
+                    message: 'user-disconnected',
+                    userId: data.userId
+                });
+            });
         });
-    })
+    });
+
+    setInterval(() => {
+        wss.clients.forEach(ws => {
+
+            if (!ws.isAlive) return ws.terminate();
+
+            ws.isAlive = false;
+            ws.ping(null, false, true);
+        });
+    }, 10000);
 };
 
 const broadcastToRooms = ({wss, ws, WebSocket, message, userId}) => {

@@ -4,10 +4,14 @@ myVideo.muted = true;
 const myPeer = new Peer();
 const peers = {};
 
-const ws = new WebSocket(`wss://${location.host}`);
+const ws = new WebSocket(`ws://${location.host}`);
 
 myPeer.on('open', id => {
-    ws.send(JSON.stringify({message: 'join-room', roomId: ROOM_ID, userId: id}));
+    ws.send(JSON.stringify({
+        message: 'join-room',
+        roomId: ROOM_ID,
+        userId: id,
+    }));
 });
 
 navigator.mediaDevices.getUserMedia({
@@ -32,6 +36,9 @@ navigator.mediaDevices.getUserMedia({
             case 'user-connected':
                 connectToNewUser(data.userId, stream);
                 break;
+            case 'user-disconnected':
+                if (peers[data.userId]) peers[data.userId].close();
+                break;
         }
     }
 })
@@ -39,15 +46,14 @@ navigator.mediaDevices.getUserMedia({
 const connectToNewUser = (userId, stream) => {
     const call = myPeer.call(userId, stream);
     const video = document.createElement('video');
-    video.muted = true;
     call.on('stream', userVideoStream => {
         addVideoStream(video, userVideoStream);
     });
     call.on('close', () => {
         video.remove();
     });
-
     peers[userId] = call;
+    console.log(peers)
 }
 
 const addVideoStream = (video, stream) => {
