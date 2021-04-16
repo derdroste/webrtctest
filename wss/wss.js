@@ -1,4 +1,4 @@
-const WebSocketServer = wss => {
+const WebSocketServer = ({wss, WebSocket}) => {
     wss.on('connection', ws => {
         console.log(`Client connected...`);
 

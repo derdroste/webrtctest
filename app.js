@@ -9,7 +9,7 @@ const port = 8080;
 
 app.use(express.static('public'));
 
-WebSocketServer(wss);
+WebSocketServer({wss, WebSocket});
 
 server.listen(port, () => {
     console.log(`Server listening on Port: ${port}...`);
